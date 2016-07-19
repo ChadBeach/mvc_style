@@ -3,13 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>mvr_style</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div class="container">
-      <p>Welcome to your life.</p>
+      <h1>Contacts</h1>
+      <table id="contacts-table">
+        <tr id="contacts-head">
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>City, State</th>
+        </tr>
+      </table>
+      <form id="contacts-form">
+        <div class="item text">
+          <lable>First Name:</label>
+            <span class="first_name"><input type="text" name="first_name" />
+            </span>
+
+            <div class="item text">
+              <lable>Last Name:</label>
+                <span class="field"><input type="text" name="last_name" /></span>
+                </span>
+                </div
+
+                <div class="item text">
+                  <lable>Phone:</label>
+                    <span class="phone"><input type="text" name="phone" /></span>
+                </div>
+                    <div class="item text">
+                      <lable>City, State:</label>
+                        <span class="city_state"><input type="text" name="city_state" /></span>
+
+                        <div class="button-wrapper">
+                          <div class="item button">
+                            <span class="field"><input type="button" id="contacts-op-delete" value="Delete" /></span>
+                          </span>
+                          <span class="field"><input type="submit" id="contacts-op-save" value="Save" /></span>
+                        </span>
+                        <input type="hidden" nmae="id_entry" value="0" />
+                      </form>
+</div>
+</div>
     </div>
     <script src="js/bundle.js"></script>
   </body>
